@@ -1,0 +1,49 @@
+Issue Id,Parent Id,Issue Type,Summary,Description,Priority,Labels
+1,,Epic,User Research,Complete the Empathize and Define stages with real hostel users,High,research
+2,,Epic,Student Experience,Complaint registration tracking and feedback,High,student
+3,,Epic,Warden Experience,Queue assignment and status handling,High,warden
+4,,Epic,Hostel Administration and Analytics,Each hostel manages its own categories people analytics and export,Medium,admin
+5,,Epic,Quality and Security,Testing access control and data protection,High,quality
+6,,Epic,Testing and Iteration,Usability testing with real users and improvements,High,testing
+7,,Epic,Documentation,Final report and presentation,Medium,documentation
+8,,Epic,Multi-hostel Platform,Hostel registration approval QR onboarding and tenant isolation,High,platform
+10,1,Story,Prepare interview guide and consent form,"As a researcher I want an interview guide and consent form so that I collect research data ethically",High,research
+11,1,Story,Run interviews with students wardens and admin staff,"As a researcher I want to interview real users so that I understand their problems",High,research
+12,1,Story,Run the resident survey,"As a researcher I want survey data so that I can measure how common the problems are",High,research
+13,1,Story,Build personas and empathy maps from real findings,"As a researcher I want personas based on evidence so that the team shares one view of users",High,research
+14,1,Story,Write problem statements and How Might We questions,"As a researcher I want focused HMW questions so that ideation has direction",Medium,research
+20,2,Story,Scan the hostel QR code then register or sign in,"As a student I want to scan my hostel's QR code and land only on my hostel so that my complaints reach the right warden",High,student
+21,2,Story,Raise a complaint with category location description and photos,"As a student I want to report a problem quickly so that it gets fixed",High,student
+22,2,Story,Mark a complaint confidential,"As a student I want sensitive complaints hidden from everyone except the owner warden so that my privacy is protected",Medium,student
+23,2,Story,Track complaint status with a timeline,"As a student I want to see progress so that I know someone is acting",High,student
+24,2,Story,Confirm fix and rate the resolution,"As a student I want to confirm the fix and rate it so that quality is measured",Medium,student
+25,2,Story,Reopen a complaint that is not fixed,"As a student I want to reopen a complaint so that unresolved problems are not lost",Medium,student
+26,2,Story,Receive in-app notifications,"As a student I want alerts when status changes so that I do not need to chase",Medium,student
+30,3,Story,See a priority and age sorted queue with overdue first,"As a warden I want urgent and late complaints first so that nothing is ignored",High,warden
+31,3,Story,Filter and search complaints,"As a warden I want filters by status category block and priority so that I find items fast",Medium,warden
+32,3,Story,Assign maintenance staff,"As a warden I want to assign a person so that responsibility is clear",High,warden
+33,3,Story,Update status with notes,"As a warden I want to move a complaint through the workflow so that students see progress",High,warden
+34,3,Story,Add internal notes hidden from students,"As a warden I want private notes so that I can coordinate",Low,warden
+35,3,Story,Keep a directory of nearby service providers,"As a warden I want plumbers electricians and others with their mobile numbers so that I can assign and call them quickly",Medium,warden
+40,4,Story,Manage my hostel's complaint categories and target times,"As a warden I want to set categories and target hours so that overdue is meaningful",High,admin
+41,4,Story,Manage the people of my hostel,"As a warden I want to disable accounts reset student passwords and add assistant wardens so that access is controlled",High,admin
+42,4,Story,View analytics of my hostel from real data,"As a warden I want counts resolution time and ratings so that I can make decisions",High,admin
+43,4,Story,Export my hostel's complaints to CSV,"As a warden I want a CSV export so that I can report outside the system",Medium,admin
+50,5,Story,Protect against CSRF and brute-force login,"As the owner I want the system protected so that accounts are safe",High,quality
+51,5,Story,Validate and restrict uploads,"As the owner I want only real images accepted so that the server stays safe",High,quality
+52,5,Story,Write automated service and HTTP tests,"As a developer I want repeatable tests so that changes do not break rules",High,quality
+60,6,Story,Plan and run task-based usability tests,"As a tester I want to watch real users complete tasks so that I find design problems",High,testing
+61,6,Story,Collect SUS questionnaire responses,"As a tester I want standard satisfaction scores so that usability is measured",High,testing
+62,6,Story,Apply test findings,"As a designer I want to fix issues found in testing so that the design improves",High,testing
+70,7,Story,Write the final report,"As the author I want a complete report so that I can submit the project",High,documentation
+71,7,Story,Prepare the presentation and demo,"As the author I want a clear demo so that the work is understood",Medium,documentation
+80,8,Story,Warden submits a hostel registration request,"As a warden I want to register my hostel with my details so that it can join the platform",High,platform
+81,8,Story,Confirm the warden email before the request counts,"As the platform owner I want the email verified so that fake or mistyped requests never reach me",High,platform
+82,8,Story,Administrator accepts or rejects from an email link or the dashboard,"As the platform administrator I want an email with only Accept and Reject so that I can decide quickly",High,platform
+83,8,Story,Approved warden receives a one-time setup link,"As a warden I want a link to set my password and open my hostel dashboard so that I can configure my hostel",High,platform
+84,8,Story,Warden designs the complaint form with dropdowns and text fields,"As a warden I want to choose what students are asked so that complaints arrive with the details I need",High,platform
+85,8,Story,Publish the hostel and get a printable QR code,"As a warden I want a QR code so that students reach my hostel's complaint page directly",High,platform
+86,8,Story,Isolate every hostel's data from all others,"As the platform owner I want no hostel to see another's complaints people or settings so that privacy is guaranteed",High,platform
+87,8,Story,Send confirmation and approval emails through Gmail SMTP,"As the platform owner I want free reliable email with retries and a log so that nobody misses a link",Medium,platform
+88,8,Story,Suspend and reactivate a hostel,"As the platform administrator I want to block a hostel without deleting its data so that misuse can be stopped",Medium,platform
+89,8,Story,Regenerate the QR code,"As a warden I want to replace a leaked QR code so that old printed codes stop working",Low,platform
