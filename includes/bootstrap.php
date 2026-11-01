@@ -42,6 +42,7 @@ require HC_ROOT . '/includes/hostels.php';
 require HC_ROOT . '/includes/forms.php';
 require HC_ROOT . '/includes/notifications.php';
 require HC_ROOT . '/includes/complaints.php';
+require HC_ROOT . '/includes/paypal.php';
 require HC_ROOT . '/includes/layout.php';
 
 if (PHP_SAPI !== 'cli' && !defined('HC_SKIP_INSTALL_CHECK') && !db_installed()) {
