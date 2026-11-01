@@ -1,0 +1,8 @@
+# Local databases hold real accounts and password hashes. Never publish them.
+storage/db/*.sqlite
+storage/db/*.sqlite-*
+storage/uploads/
+*.env
+.env
+.env.*
+!.env.example

@@ -64,4 +64,18 @@ return [
         // can be tried without a mail server. Never switch this on for a live site.
         'preview'      => getenv('HC_MAIL_PREVIEW') === '1',
     ],
+    // PayPal invoicing (sandbox by default). Create a sandbox app at developer.paypal.com and see docs/PAYPAL_SETUP.md.
+    // Off until HC_PAYPAL_ENABLED=1 and the client id / secret are set. Never commit real credentials.
+    'paypal' => [
+        'enabled'          => getenv('HC_PAYPAL_ENABLED') === '1',
+        'env'              => getenv('HC_PAYPAL_ENV') === 'live' ? 'live' : 'sandbox',
+        'client_id'        => getenv('HC_PAYPAL_CLIENT_ID') ?: '',
+        'client_secret'    => getenv('HC_PAYPAL_CLIENT_SECRET') ?: '',
+        // Id of the webhook registered for your public URL (developer dashboard > your app > Webhooks).
+        'webhook_id'       => getenv('HC_PAYPAL_WEBHOOK_ID') ?: '',
+        'currency'         => getenv('HC_PAYPAL_CURRENCY') ?: 'USD',
+        // Safety limit for a single invoice, in minor units (cents). Guards against typos and wrong amounts from an AI agent.
+        'max_amount_cents' => (int) (getenv('HC_PAYPAL_MAX_CENTS') ?: 50000),
+        'timeout'          => 15,
+    ],
 ];
